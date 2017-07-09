@@ -1,0 +1,56 @@
+<?php
+
+use Illuminate\Support\Facades\Schema;
+use Illuminate\Database\Schema\Blueprint;
+use Illuminate\Database\Migrations\Migration;
+
+class CreateProgress extends Migration
+{
+    /**
+     * Run the migrations.
+     *
+     * @return void
+     */
+    public function up()
+    {   
+        if(!Schema::hasTable('progress'))
+        Schema::create('progress', function (Blueprint $table) {
+            $table->increments('id');
+            $table->string('dateSupp');
+                 $table->string('name');
+                 $table->string('age');
+                 $table->string('edulevel');
+                 $table->string('lifeskill');
+                 $table->string('vocaSkill');
+                 $table->string('skill1');
+                 $table->string('skill2');
+                 $table->string('currEmp');
+                 $table->string('sal');
+                 $table->string('curSal');
+                 $table->string('jobres');
+                 $table->string('staying');
+                 $table->string('saveMon');
+                 $table->string('house');
+                 $table->string('insti');
+                 $table->string('duration');
+                 $table->string('nature');
+                 $table->string('noofWomen');
+                 $table->string('oute');
+                 $table->string('outo');
+                 $table->string('amt');
+                 $table->integer('womenId');
+                    
+              $table->timestamps();
+        });
+    }
+
+    /**
+     * Reverse the migrations.
+     *
+     * @return void
+     */
+    public function down()
+    {
+        Schema::dropIfExists('progress');
+    }
+}
