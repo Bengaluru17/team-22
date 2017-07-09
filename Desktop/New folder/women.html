@@ -1,0 +1,42 @@
+<html>
+	<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+	<body bgcolor="" class="container">
+
+		<center><h1>Form 1</h1></center>
+
+		<form action="http://localhost:8000/fillWomen" method="POST" >
+		<input type="hidden" name="_token" value="{{ csrf_token() }}">
+		<div class="form-group">
+      <label for="uname">Name:</label>
+      <input type="text" class="form-control" id="uname" name="uname" placeholder="Name" >
+    </div>
+    <div class="form-group">
+      <label for="dob">	Date of Birth:</label>
+      <input type="calendar" class="form-control" id="dob" name="dob"  >
+    </div>
+			
+			Date of Birth<input type="text" name="dob">
+			Id card no<input type="text" name="idno">
+			Contact<input type="text" name="contact">
+			Education<input type="text" name="education">
+			Vocal Training<input type="text" name="voctraining">
+			Background<input type="text" name="background">
+			Duration in KTC<input type="text" name="duration">
+			Skills<input type="text" name="skills">
+			Level of Skill<input type="text" name="skillLevel">
+			Current Salary<input type="text" name="currsalary">
+			Current Location<input type="text" name="currLocation">
+			Future Plans<input type="text" name="futureplans">
+			Remarks<input type="text" name="remarks"><br>
+
+			
+			<input type="submit" value="login" name="submit">
+		</form>
+	</body>
+
+</html>
