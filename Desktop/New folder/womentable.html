@@ -1,0 +1,91 @@
+<html>
+	<head>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	</head>
+	<body bgcolor="" class="container">
+
+		<center><h1>Form 1</h1></center>
+
+		<form action="http://localhost:8000/fillWomen" method="POST" >
+		<input type="hidden" name="_token" value="{{ csrf_token() }}">
+		<div class="form-group">
+      <label for="uname">Name:</label>
+      <input type="text" class="form-control" id="uname" name="uname" placeholder="Name" >
+    </div>
+    <div class="form-group">
+      <label for="dob">	Date of Birth:</label>
+      <input type="calendar" class="form-control" id="dob" name="dob"  >
+    </div>
+			
+			Date of Birth<input type="text" name="dob">
+			<div class="form-group">
+      <label for="idno">	ID Card No:</label>
+      <input type="text" class="form-control" id="idno" name="idno"  >
+    </div>
+			Id card no<input type="text" name="idno">
+			<div class="form-group">
+      <label for="contact">	Contact:</label>
+      <input type="text" class="form-control" id="text" name="text"  >
+    </div>
+			Contact<input type="text" name="contact">
+			<div class="form-group">
+      <label for="education">	Education:</label>
+      <input type="text" class="form-control" id="education" name="education"  >
+    </div>
+			Education<input type="text" name="education">
+			<div class="form-group">
+      <label for="voctraining">	Vocal Training:</label>
+      <input type="text" class="form-control" id="voctraining" name="voctraining"  >
+    </div>
+			Vocal Training<input type="text" name="voctraining">
+			<div class="form-group">
+      <label for="background">	Background:</label>
+      <input type="text" class="form-control" id="background" name="background"  >
+    </div>
+			Background<input type="text" name="background">
+			<div class="form-group">
+      <label for="duration">	Duration In KTC:</label>
+      <input type="text" class="form-control" id="duration" name="duration"  >
+    </div>
+			Duration in KTC<input type="text" name="duration">
+			<div class="form-group">
+      <label for="skills"> Skills:</label>
+      <input type="text" class="form-control" id="skills" name="skills"  >
+    </div>
+			Skills<input type="text" name="skills">
+			<div class="form-group">
+      <label for="skillLevel">	Level of Skills:</label>
+      <input type="text" class="form-control" id="skillLevel" name="skillLevel"  >
+    </div>
+			Level of Skill<input type="text" name="skillLevel">
+			<div class="form-group">
+      <label for="currsalary">	Curent Salary:</label>
+      <input type="text" class="form-control" id="currsalary" name="currsalary"  >
+    </div>
+			Current Salary<input type="text" name="currsalary">
+			<div class="form-group">
+      <label for="currLocation">	Current Location:</label>
+      <input type="text" class="form-control" id="currLocation" name="currLocation"  >
+    </div>
+			Current Location<input type="text" name="currLocation">
+			<div class="form-group">
+      <label for="futureplans">	Future Plans:</label>
+      <input type="text" class="form-control" id="futureplans" name="futureplans"  >
+    </div>
+			Future Plans<input type="text" name="futureplans">
+			<div class="form-group">
+      <label for="remarks">	Remarks:</label>
+      <input type="text" class="form-control" id="remarks" name="remarks"  >
+    </div>
+			Remarks<input type="text" name="remarks"><br>
+			<div class="form-group">
+      
+			
+			<input type="submit" value="login" name="submit">
+		</form>
+	</body>
+
+</html>
